@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      box-sizing: border-box;
+      background-color: hsl(47, 88%, 63%);
+      font-family: "Figtree"; 
+      /* height: 100vh; */
+      z-index: -1;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 368px;
+      margin: 100px auto;
+      border-radius: 20px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .card-image {
+      padding-top: 16px;
+      margin-left: 16px;
+    }
+
+    .card-image img {
+      border-radius: 10px;
+    }
+
+    .card-content {
+      margin-left: 16px;
+    }
+
+    .learning {
+      display: inline-block;
+      background: hsl(47, 88%, 63%);
+      margin-top: 16px;
+      padding: 4px 8px;
+      font-weight: 800;
+      border-radius: 4px;
+    }
+
+    .card-content .date {
+      margin-top: 14px;
+      font-weight: 500;
+      color: hsl(0, 0%, 7%);
+    }
+
+    .card-content h2 {
+      margin-top: 14px;
+      margin-bottom: 14px;
+      font-weight: 800;
+    }
+
+    .card-content h2:hover {
+      cursor: pointer;
+      color: hsl(47, 88%, 63%);
+    }
+
+    .card-content p {
+      margin-top: 2px;
+      line-height: 24px;
+      color: hsl(0, 0%, 42%);
+    }
+
+    .card-footer {
+      width: 180px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .footer-image img {
+      width: 40px;
+    }
+
+    .card-footer h4 {
+      margin-left: 10px;
+      font-weight: 800;
+    }
+
+    .shadow {
+      background-color: black;
+      color: #fff;
+      width: 368px;
+      height: 510px;
+      margin: 100px auto;
+      border-radius: 20px;
+      z-index: 1;
+      position: absolute;
+      top: 10px;
+      right: 661px;
+    }
+
+    @media (max-width: 400px) {
+      body {
+        margin-top: 80px;
+        margin-left: 0;
+        margin-right: 0;
+        z-index: -1;
+      }
+      .card {
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .card-image img {
+        width: 289px;
+        margin: 0;
+      }
+      
+      .shadow {
+        background-color: black;
+        width: 320px;
+        height: 482px;
+        position: absolute;
+        z-index: 1;
+        top: -11px;
+        right: 19px;
+      }
+
+      .attribution {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="./assets/images/illustration-article.svg" alt="card-image">
+    </div>
+    <div class="card-content">
+      <span class="learning">Learning</span>
+      <p class="date">Published 21 Dec 2023</p>
+      <h2>HTML & CSS foundations</h2>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="card-footer">
+        <div class="footer-image">
+          <img src="./assets/images/image-avatar.webp" alt="avatar">
+        </div>
+        <h4>Greg Hooper</h4>
+      </div>
+    </div>
+  </div>
+  <div class="shadow">
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdulrahmon Babatunde</a>.
+  </div>
+
+</body>
+</html>
