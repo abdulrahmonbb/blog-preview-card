@@ -29,8 +29,8 @@
       width: 368px;
       margin: 100px auto;
       border-radius: 20px;
-      z-index: 2;
-      position: relative;
+      border: 1px solid black;
+      box-shadow: 8px 8px 0 0 black;
     }
 
     .card-image {
@@ -94,50 +94,10 @@
       font-weight: 800;
     }
 
-    .shadow {
-      background-color: black;
-      color: #fff;
-      width: 368px;
-      height: 510px;
-      margin: 100px auto;
-      border-radius: 20px;
-      z-index: 1;
-      position: absolute;
-      top: 10px;
-      right: 661px;
-    }
-
     @media (max-width: 400px) {
-      body {
-        margin-top: 80px;
-        margin-left: 0;
-        margin-right: 0;
-        z-index: -1;
-      }
       .card {
         width: 320px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
-      }
-
-      .card-image img {
-        width: 289px;
-        margin: 0;
-      }
-      
-      .shadow {
-        background-color: black;
-        width: 320px;
-        height: 482px;
-        position: absolute;
-        z-index: 1;
-        top: -11px;
-        right: 19px;
-      }
-
-      .attribution {
-        margin-top: 30px;
+        height: 400px;
       }
     }
   </style>
